@@ -1,2 +1,13 @@
 *.sdf
 *.opendb
+
+.vs
+
+ie/webrtceverywhere_i.c
+ie/webrtceverywhere_i.h
+ie/webrtceverywhere_p.c
+
+Release
+ie/Release
+npapi/Release
+common/Release
