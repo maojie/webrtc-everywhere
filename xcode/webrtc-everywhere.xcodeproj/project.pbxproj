@@ -37,6 +37,11 @@
 		15F1FCCC1B8D54C900CCB05F /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F1FCCA1B8D54C900CCB05F /* thread.h */; };
 		15F1FCCF1B8D550200CCB05F /* messagequeue.cc in Sources */ = {isa = PBXBuildFile; fileRef = 15F1FCCD1B8D550200CCB05F /* messagequeue.cc */; };
 		15F1FCD01B8D550200CCB05F /* messagequeue.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F1FCCE1B8D550200CCB05F /* messagequeue.h */; };
+		3FCBDE611C46521F0037D20A /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCBDE601C46521E0037D20A /* libc++abi.tbd */; };
+		3FCBDE631C46522D0037D20A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCBDE621C46522D0037D20A /* libc++.tbd */; };
+		3FCBDE661C4652400037D20A /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCBDE641C4652400037D20A /* libstdc++.6.tbd */; };
+		3FCBDE671C4652400037D20A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCBDE651C4652400037D20A /* libstdc++.tbd */; };
+		3FCBDE681C4652A10037D20A /* libc++.tbd in Headers */ = {isa = PBXBuildFile; fileRef = 3FCBDE621C46522D0037D20A /* libc++.tbd */; };
 		EC23B3B219738D9B000DFA4B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC23B3B119738D9B000DFA4B /* OpenGL.framework */; };
 		EC23B3B419738DA2000DFA4B /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC23B3B319738DA2000DFA4B /* GLUT.framework */; };
 		EC23B3E71974E0E2000DFA4B /* BrowserCallback.cc in Sources */ = {isa = PBXBuildFile; fileRef = EC23B3BC1974E0E2000DFA4B /* BrowserCallback.cc */; };
@@ -143,10 +148,12 @@
 		15F1FCCA1B8D54C900CCB05F /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = thread.h; path = "../../../webrtc-checkout/src/webrtc/base/thread.h"; sourceTree = "<group>"; };
 		15F1FCCD1B8D550200CCB05F /* messagequeue.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = messagequeue.cc; path = "../../../webrtc-checkout/src/webrtc/base/messagequeue.cc"; sourceTree = "<group>"; };
 		15F1FCCE1B8D550200CCB05F /* messagequeue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = messagequeue.h; path = "../../../webrtc-checkout/src/webrtc/base/messagequeue.h"; sourceTree = "<group>"; };
+		3FCBDE601C46521E0037D20A /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		3FCBDE621C46522D0037D20A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3FCBDE641C4652400037D20A /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		3FCBDE651C4652400037D20A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		EC23B3B119738D9B000DFA4B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		EC23B3B319738DA2000DFA4B /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		EC23B3B519739370000DFA4B /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
-		EC23B3B91973B64E000DFA4B /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
 		EC23B3BC1974E0E2000DFA4B /* BrowserCallback.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = BrowserCallback.cc; sourceTree = "<group>"; };
 		EC23B3BD1974E0E2000DFA4B /* BrowserCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserCallback.h; sourceTree = "<group>"; };
 		EC23B3C31974E0E2000DFA4B /* MediaSourceStates.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = MediaSourceStates.cc; sourceTree = "<group>"; };
@@ -234,8 +241,6 @@
 		EC2AEC241973588900360EC6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		EC2AEC26197358B200360EC6 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 		EC2AEC28197358BB00360EC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		EC2AEC2A19735B5400360EC6 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		EC2AEC2C19735D2400360EC6 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		ECE4C3A219927D4D00FFD159 /* _EncryptCtx.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = _EncryptCtx.cc; sourceTree = "<group>"; };
 		ECE4C3A319927D4D00FFD159 /* _EncryptCtx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _EncryptCtx.h; sourceTree = "<group>"; };
 		ECE4C3A419927D4D00FFD159 /* _RTCDataChannel.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = _RTCDataChannel.cc; sourceTree = "<group>"; };
@@ -259,6 +264,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCBDE661C4652400037D20A /* libstdc++.6.tbd in Frameworks */,
+				3FCBDE671C4652400037D20A /* libstdc++.tbd in Frameworks */,
+				3FCBDE631C46522D0037D20A /* libc++.tbd in Frameworks */,
+				3FCBDE611C46521F0037D20A /* libc++abi.tbd in Frameworks */,
 				EC2AEC171973552F00360EC6 /* ApplicationServices.framework in Frameworks */,
 				152833181B7C421600099EF2 /* SystemConfiguration.framework in Frameworks */,
 				152833161B7C41C100099EF2 /* GSS.framework in Frameworks */,
@@ -374,14 +383,14 @@
 		EC2AEB751973449200360EC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FCBDE641C4652400037D20A /* libstdc++.6.tbd */,
+				3FCBDE651C4652400037D20A /* libstdc++.tbd */,
+				3FCBDE621C46522D0037D20A /* libc++.tbd */,
+				3FCBDE601C46521E0037D20A /* libc++abi.tbd */,
 				152833171B7C421600099EF2 /* SystemConfiguration.framework */,
 				152833151B7C41C100099EF2 /* GSS.framework */,
-				EC23B3B91973B64E000DFA4B /* libc++abi.dylib */,
-				EC23B3B519739370000DFA4B /* libstdc++.6.dylib */,
 				EC23B3B319738DA2000DFA4B /* GLUT.framework */,
 				EC23B3B119738D9B000DFA4B /* OpenGL.framework */,
-				EC2AEC2C19735D2400360EC6 /* libc++.dylib */,
-				EC2AEC2A19735B5400360EC6 /* libstdc++.dylib */,
 				EC2AEC28197358BB00360EC6 /* AVFoundation.framework */,
 				EC2AEC26197358B200360EC6 /* QTKit.framework */,
 				EC2AEC241973588900360EC6 /* AppKit.framework */,
@@ -478,6 +487,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCBDE681C4652A10037D20A /* libc++.tbd in Headers */,
 				EC23B40B1974F8D1000DFA4B /* npapi-includes.h in Headers */,
 				EC23B3FD1974E0E2000DFA4B /* RTCStats.h in Headers */,
 				ECE4C3AB19927D4F00FFD159 /* _RTCDataChannel.h in Headers */,
@@ -538,7 +548,7 @@
 		EC2AEB6B1973449200360EC6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = sarandogou;
 				TargetAttributes = {
 					152833331B7D76FF00099EF2 = {
@@ -700,6 +710,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -772,6 +783,7 @@
 		EC2AEBED19734C0000360EC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "webrtc-everywhere/webrtc-everywhere-Prefix.pch";
@@ -787,6 +799,7 @@
 				INFOPLIST_FILE = "webrtc-everywhere/webrtc-everywhere-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LIBRARY_SEARCH_PATHS = "$(WE_LIBS)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "$(WE_CFLAGS)";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
@@ -832,7 +845,7 @@
 					"-lwebrtc_i420",
 					"-lvideo_coding_utility",
 					"-lwebrtc_vp8",
-					"-lvpx",
+					"-lvpx_new",
 					"-lvpx_intrinsics_mmx",
 					"-lvpx_intrinsics_sse2",
 					"-lvpx_intrinsics_ssse3",
@@ -859,8 +872,14 @@
 					"-ldesktop_capture",
 					"-ljingle_p2p",
 					"-lsrtp",
+					"-lrtc_event_log",
 					"-lwebrtc_h264",
+					"-lrtc_event_log_proto",
+					"-lrtc_event_log_source",
+					"-lisac_fix",
+					"-lisac_common",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sarandogou.webrtc-everywhere";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = plugin;
 			};
@@ -869,6 +888,7 @@
 		EC2AEBEE19734C0000360EC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -882,6 +902,7 @@
 				INFOPLIST_FILE = "webrtc-everywhere/webrtc-everywhere-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LIBRARY_SEARCH_PATHS = "$(WE_LIBS)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "$(WE_CFLAGS)";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
@@ -927,7 +948,7 @@
 					"-lwebrtc_i420",
 					"-lvideo_coding_utility",
 					"-lwebrtc_vp8",
-					"-lvpx",
+					"-lvpx_new",
 					"-lvpx_intrinsics_mmx",
 					"-lvpx_intrinsics_sse2",
 					"-lvpx_intrinsics_ssse3",
@@ -954,8 +975,14 @@
 					"-ldesktop_capture",
 					"-ljingle_p2p",
 					"-lsrtp",
+					"-lrtc_event_log",
 					"-lwebrtc_h264",
+					"-lrtc_event_log_proto",
+					"-lrtc_event_log_source",
+					"-lisac_fix",
+					"-lisac_common",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.sarandogou.webrtc-everywhere";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = plugin;
 			};

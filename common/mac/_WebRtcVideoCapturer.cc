@@ -160,7 +160,7 @@ namespace cricket {
     }
     
     bool WebRtcVideoCapturer::Init(const Device& device) {
-        DCHECK(!start_thread_);
+        RTC_DCHECK(!start_thread_);
         if (module_) {
             LOG(LS_ERROR) << "The capturer is already initialized";
             return false;
@@ -239,7 +239,7 @@ namespace cricket {
     }
     
     bool WebRtcVideoCapturer::Init(webrtc::VideoCaptureModule* module) {
-        DCHECK(!start_thread_);
+        RTC_DCHECK(!start_thread_);
         if (module_) {
             LOG(LS_ERROR) << "The capturer is already initialized";
             return false;
@@ -276,7 +276,7 @@ namespace cricket {
         // Can't take lock here as this will cause deadlock with
         // OnIncomingCapturedFrame. In fact, the whole method, including methods it
         // calls, can't take lock.
-        DCHECK(module_);
+        RTC_DCHECK(module_);
         
         const std::string group_name =
         webrtc::field_trial::FindFullName("WebRTC-CVO");
@@ -299,13 +299,13 @@ namespace cricket {
         }
         if (start_thread_) {
             LOG(LS_ERROR) << "The capturer is already running";
-            DCHECK(start_thread_->IsCurrent())
+            RTC_DCHECK(start_thread_->IsCurrent())
             << "Trying to start capturer on different threads";
             return CS_FAILED;
         }
         
         start_thread_ = rtc::Thread::Current();
-        DCHECK(!async_invoker_);
+        RTC_DCHECK(!async_invoker_);
         async_invoker_.reset(new rtc::AsyncInvoker());
         captured_frames_ = 0;
         
@@ -366,9 +366,9 @@ namespace cricket {
             LOG(LS_ERROR) << "The capturer is already stopped";
             return;
         }
-        DCHECK(start_thread_);
-        DCHECK(start_thread_->IsCurrent());
-        DCHECK(async_invoker_);
+        RTC_DCHECK(start_thread_);
+        RTC_DCHECK(start_thread_->IsCurrent());
+        RTC_DCHECK(async_invoker_);
         if (IsRunning()) {
             // The module is responsible for OnIncomingCapturedFrame being called, if
             // we stop it we will get no further callbacks.
@@ -433,8 +433,8 @@ namespace cricket {
             return;
         }
         // This can only happen between Start() and Stop().
-        DCHECK(start_thread_);
-        DCHECK(async_invoker_);
+        RTC_DCHECK(start_thread_);
+        RTC_DCHECK(async_invoker_);
         if (start_thread_->IsCurrent()) {
             SignalFrameCapturedOnStartThread(sample);
         } else {
@@ -459,9 +459,9 @@ namespace cricket {
     void WebRtcVideoCapturer::SignalFrameCapturedOnStartThread(
                                                                const webrtc::VideoFrame frame) {
         // This can only happen between Start() and Stop().
-        DCHECK(start_thread_);
-        DCHECK(start_thread_->IsCurrent());
-        DCHECK(async_invoker_);
+        RTC_DCHECK(start_thread_);
+        RTC_DCHECK(start_thread_->IsCurrent());
+        RTC_DCHECK(async_invoker_);
         
         ++captured_frames_;
         // Log the size and pixel aspect ratio of the first captured frame.
