@@ -12,6 +12,8 @@ ie/Release
 npapi/Release
 common/Release
 
+common/webrtc-everywhere-common.aps
+
 xcode/.DS_Store
 xcode/webrtc-everywhere.xcodeproj/xcuserdata/*.xcuserdatad
 xcode/webrtc-everywhere.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad
