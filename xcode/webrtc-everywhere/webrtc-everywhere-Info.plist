@@ -22,19 +22,21 @@
 	<string>1</string>
 	<key>CSResourcesFileMapped</key>
 	<string>yes</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.developer-tools</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014-2015 Doubango Telecom. All rights reserved.</string>
+	<string>Copyright © 2014-2016 Agora.io. All Rights Reserved.</string>
 	<key>WebPluginDescription</key>
-	<string>WebRTC Everywhere Plug-in for Safari</string>
+	<string>Agora.io WebRTC Plug-in for Safari</string>
 	<key>WebPluginMIMETypes</key>
 	<dict>
 		<key>application/webrtc-everywhere</key>
 		<dict>
 			<key>WebPluginTypeDescription</key>
-			<string>WebRTC Everywhere Plug-in for Safari (Main)</string>
+			<string>Agora.io WebRTC Plug-in for Safari (Main)</string>
 		</dict>
 	</dict>
 	<key>WebPluginName</key>
-	<string>WebRTC Everywhere Plug-in for Safari</string>
+	<string>Agora.io WebRTC Plug-in for Safari</string>
 </dict>
 </plist>

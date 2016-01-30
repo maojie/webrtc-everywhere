@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "70B3A2C8ADAA4E37012293F15ABDC2FE552E5D0A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8FFACF9194D48576A22F6F0C4F6B4F0BA1ABFC64" : 0,
+    "70B3A2C8ADAA4E37012293F15ABDC2FE552E5D0A" : 0,
+    "D1E989786DAD1236B6B40088CD5D0646C93ADD9A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E863C1BE-4610-482C-AE5C-AC3053C45E02",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8FFACF9194D48576A22F6F0C4F6B4F0BA1ABFC64" : "webrtc-checkout\/src\/",
+    "70B3A2C8ADAA4E37012293F15ABDC2FE552E5D0A" : "webrtc-everywhere\/",
+    "D1E989786DAD1236B6B40088CD5D0646C93ADD9A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "webrtc",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "xcode\/webrtc.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/maojie\/webrtc-everywhere.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70B3A2C8ADAA4E37012293F15ABDC2FE552E5D0A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/chromium.googlesource.com\/external\/webrtc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8FFACF9194D48576A22F6F0C4F6B4F0BA1ABFC64"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AgoraLab\/WebRTC-IE-Plugin.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D1E989786DAD1236B6B40088CD5D0646C93ADD9A"
+    }
+  ]
+}
