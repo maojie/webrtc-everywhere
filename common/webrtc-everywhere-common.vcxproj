@@ -22,6 +22,7 @@
     <ProjectGuid>{95230956-8581-4F03-A589-C6217119DE9E}</ProjectGuid>
     <RootNamespace>webrtceverywherecommon</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectName>AgoraWebRtcCommon</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

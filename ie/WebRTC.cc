@@ -261,7 +261,7 @@ HRESULT CWebRTC::OnDraw(ATL_DRAWINFO& di)
 	else {
 		Rectangle(di.hdcDraw, rc.left, rc.top, rc.right, rc.bottom);
 		SetTextAlign(di.hdcDraw, TA_CENTER | TA_BASELINE);
-		LPCTSTR pszText = _T("ATL 8.0 : Doubango Telecom WebRTC Video element");
+		LPCTSTR pszText = _T("Agora.io WebRTC Video element");
 #ifndef _WIN32_WCE
 		TextOut(di.hdcDraw,
 			(rc.left + rc.right) / 2,

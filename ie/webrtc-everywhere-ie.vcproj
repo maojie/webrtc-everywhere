@@ -79,7 +79,7 @@
 				Name="VCLinkerTool"
 				RegisterOutput="true"
 				IgnoreImportLibrary="true"
-				AdditionalDependencies="comsuppw.lib Oleacc.lib RpcRT4.lib $(OutDir)\webrtc-everywhere-common.lib"
+				AdditionalDependencies="comsuppw.lib Oleacc.lib RpcRT4.lib $(OutDir)\AgoraWebRtcCommon.lib"
 				LinkIncremental="2"
 				ModuleDefinitionFile=".\webrtc-everywhere.def"
 				GenerateDebugInformation="true"

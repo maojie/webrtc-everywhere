@@ -22,6 +22,7 @@
     <ProjectGuid>{FEF60750-96B0-4124-9007-B90780B6267D}</ProjectGuid>
     <RootNamespace>webrtc-everywhere</RootNamespace>
     <Keyword>AtlProj</Keyword>
+    <ProjectName>AgoraWebRtcPlugin</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -120,7 +121,7 @@
     </ResourceCompile>
     <Link>
       <RegisterOutput>true</RegisterOutput>
-      <AdditionalDependencies>comsuppw.lib;Oleacc.lib;RpcRT4.lib;$(OutDir)webrtc-everywhere-common.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>comsuppw.lib;Oleacc.lib;RpcRT4.lib;$(OutDir)AgoraWebRtcCommon.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\webrtc-everywhere.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -161,7 +162,7 @@
     </ResourceCompile>
     <Link>
       <RegisterOutput>true</RegisterOutput>
-      <AdditionalDependencies>comsuppw.lib;Oleacc.lib;RpcRT4.lib;$(OutDir)webrtc-everywhere-common.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>comsuppw.lib;Oleacc.lib;RpcRT4.lib;$(OutDir)AgoraWebRtcCommon.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\webrtc-everywhere.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -208,7 +209,7 @@
       <TargetMachine>MachineX86</TargetMachine>
       <MinimumRequiredVersion>5.01</MinimumRequiredVersion>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
-      <AdditionalDependencies>comsuppw.lib;Oleacc.lib;RpcRT4.lib;$(OutDir)webrtc-everywhere-common.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>comsuppw.lib;Oleacc.lib;RpcRT4.lib;$(OutDir)AgoraWebRtcCommon.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -248,7 +249,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
-      <AdditionalDependencies>comsuppw.lib;Oleacc.lib;$(OutDir)webrtc-everywhere-common.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>comsuppw.lib;Oleacc.lib;$(OutDir)AgoraWebRtcCommon.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
